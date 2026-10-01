@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>C90 Support</title>
+<meta name="description" content="C90 is a Mac app for keeping a music library and putting the albums you choose on an SD card.">
+<style>
+*{box-sizing:border-box}
+:root{--bg:#121212;--panel:#19191a;--line:#2c2c2e;--text:#edebe6;--body:#c9c7c1;--soft:#9a9892;--accent:#ff5a1f}
+html{background:var(--bg);color:var(--text);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;-webkit-text-size-adjust:100%}
+body{margin:0 auto;max-width:680px;padding:48px 20px 80px}
+header{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:56px}
+.mark{height:22px;fill:var(--accent);display:block}
+nav a{color:var(--soft);text-decoration:none;margin-left:20px;font-size:14px}
+nav a:hover,nav a[aria-current]{color:var(--text)}
+h1{font-size:34px;line-height:1.15;margin:0 0 16px;text-wrap:balance}
+h2{font-size:19px;margin:40px 0 8px}
+p,li{color:var(--body)}
+p.lede{font-size:19px;color:var(--text)}
+a{color:var(--accent)}
+ul{padding-left:20px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:20px 22px;margin:24px 0}
+.card p{margin:0}
+footer{margin-top:64px;padding-top:20px;border-top:1px solid var(--line);color:var(--soft);font-size:13px}
+</style>
+</head>
+<body>
+<header><a href="index.html" aria-label="C90 home"><svg class="mark" viewBox="0 0 545 152" role="img" aria-label="C90"><path fill-rule="evenodd" d="M545 0V152H384V124H517V28H356V152H192V124H328V98H192V28H28V124H164V152H0V0ZM220 70H328V28H220Z"/></svg></a><nav><a href="index.html">About</a><a href="support.html" aria-current="page">Support</a><a href="privacy.html">Privacy</a></nav></header>
+<main>
+<h1>Support</h1>
+<p class="lede">Questions, problems and ideas are welcome at <a href="mailto:ideabake@gmail.com">ideabake@gmail.com</a>.</p>
+<p>It helps to say which version you have (C90 ▸ About C90), your macOS version, and for anything about a card, its size and format.</p>
+
+<h2>C90 asks me to allow access to my card</h2>
+<p>macOS only lets an app into a disk you have handed it. When a card's light under Devices is amber, click <strong>Allow Access</strong> in the panel on the right, then <strong>Allow</strong>. Don't pick a folder in that panel: C90 needs the card itself.</p>
+
+<h2>It asks again every time I connect the same card</h2>
+<p>On macOS 26, cards formatted as exFAT (most cards over 32 GB) can't have that permission saved, so C90 has to ask each time. This is a limit in macOS, and C90 says so when it applies. Cards formatted as FAT32 are asked for once.</p>
+
+<h2>My music folder shows “Grant Access…”</h2>
+<p>C90 can't open the folder: it was moved or renamed while C90 was closed, or it is on a drive that isn't connected. Connect the drive, or click <strong>Grant Access…</strong> and choose the folder where it is now. Your albums stay listed meanwhile.</p>
+
+<h2>My card is read-only</h2>
+<p>macOS can read NTFS cards but not write to them. Reformat the card as exFAT (this erases it) to copy music. If the card has a lock switch, slide it up and connect it again.</p>
+
+<h2>Some songs won't play in C90</h2>
+<p>Ogg, Opus, APE, WavPack, WMA and DSD can't be played on a Mac without extra software. They still copy to your card and play on your player.</p>
+
+<h2>Can I try it without an SD card?</h2>
+<p>Yes. Turn on <strong>Settings ▸ SD Card ▸ Show disk images as cards</strong>, then make a blank image in Disk Utility (File ▸ New Image ▸ Blank Image, formatted as ExFAT). It appears under Devices like a card.</p>
+
+<h2>Does C90 change my music files?</h2>
+<p>Only when you ask. <strong>Edit Album</strong> writes the tags and cover you choose into the files, and zip downloads in your music folder are unpacked beside themselves. Syncing only ever writes to the card.</p>
+</main>
+<footer>© 2026 Nick Atkins. C90 is not affiliated with any player or card maker.</footer>
+</body>
+</html>
