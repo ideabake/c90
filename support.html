@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>C90 Support</title>
-<meta name="description" content="C90 is a Mac app for keeping a music library and putting the albums you choose on an SD card.">
+<meta name="description" content="C90 is a Mac app that rips your CDs, keeps your music library, plays it, and puts the albums you choose on an SD card.">
 <style>
 *{box-sizing:border-box}
 :root{--bg:#121212;--panel:#19191a;--line:#2c2c2e;--text:#edebe6;--body:#c9c7c1;--soft:#9a9892;--accent:#ff5a1f}
@@ -50,9 +50,18 @@ footer{margin-top:64px;padding-top:20px;border-top:1px solid var(--line);color:v
 <h2>Can I try it without an SD card?</h2>
 <p>Yes. Turn on <strong>Settings ▸ SD Card ▸ Show disk images as cards</strong>, then make a blank image in Disk Utility (File ▸ New Image ▸ Blank Image, formatted as ExFAT). It appears under Devices like a card.</p>
 
+<h2>C90 asks me to allow access to a CD</h2>
+<p>As with cards, macOS only lets an app read a disc you have handed it. The first time you rip a CD, a panel opens on the disc: click <strong>Allow</strong>.</p>
+
+<h2>My CD has no names, just “Track 1”, “Track 2”</h2>
+<p>C90 names CDs from gnudb, a free community database, but only if you let it go online (<strong>Settings ▸ CDs ▸ Look up CDs online</strong>). Some discs aren't in gnudb, and some have no CD-Text of their own. Click <strong>Edit</strong> on the CD's page to type the names, year and genre and add a cover before you rip.</p>
+
+<h2>Where do ripped CDs go?</h2>
+<p>Into one of your music folders, each album in its own artist and album folder, so it turns up in your library straight away. Choose which folder in <strong>Settings ▸ CDs</strong>. A song only appears once it has finished, so stopping a rip or ejecting the disc never leaves half a track behind.</p>
+
 <h2>Does C90 change my music files?</h2>
-<p>Only when you ask. <strong>Edit Album</strong> writes the tags and cover you choose into the files, and zip downloads in your music folder are unpacked beside themselves. Syncing only ever writes to the card.</p>
+<p>Only when you ask. <strong>Edit Album</strong> writes the tags and cover you choose into the files, and zip downloads in your music folder are unpacked beside themselves. Syncing only ever writes to the card, and ripping only adds new files.</p>
 </main>
-<footer>© 2026 Nick Atkins. C90 is not affiliated with any player or card maker.</footer>
+<footer>© 2026 Nick Atkins. C90 is not affiliated with any player, drive or card maker.</footer>
 </body>
 </html>
